@@ -44,15 +44,15 @@ $('#wallet_addEthereumChain').on('click', function() {
   console.log('wallet_addEthereumChain');
   var params = [
     {
-      chainId: '0x38',
-      chainName: 'BSC',
+      chainId: '0x61',
+      chainName: 'BSC Testnet',
       nativeCurrency: {
         name: 'BNB',
-        symbol: 'BNB',
+        symbol: 'tBNB',
         decimals: 18,
       },
-      rpcUrls: ['https://bsc-dataseed.binance.org/'],
-      blockExplorerUrls: ['https://bscscan.com/'],
+      rpcUrls: ['https://data-seed-prebsc-1-s1.binance.org:8545/'],
+      blockExplorerUrls: ['https://testnet.bscscan.com/'],
     },
   ];
   wallet_addEthereumChain(params);
@@ -193,9 +193,9 @@ web3.eth.getAccounts().then(res => {
 
 
 
-var clsContractAddress = "0x1Bf6e73Bb2D368cdFA3175532e8Ec2577a3a274c";
-var usdtContractAddress = "0x48afC9801eB27281C3a9d35f34cF15E8533bb87e";
-var routerAddress = "0xCc7aDc94F3D80127849D2b41b6439b7CF1eB4Ae0";
+var clsContractAddress = "0x136d327D1A70f5A1E40aE02CD04D78Dcec9BdE82";
+var usdtContractAddress = "0x632312F8fb657df3c5F28D37a72b16331F6B1632";
+var routerAddress = "0x5D1b2af02F2F1e04b0bd4878d77255a58324a56D";
 
 var BURN_ADDRESS = '0x0000000000000000000000000000000000000000';
 var PAIR_ADDRESS = "0x1df37D887937E7Ba0FceF59309C7f58FdD94D2Ef";
